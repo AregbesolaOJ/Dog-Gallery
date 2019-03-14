@@ -1,0 +1,9 @@
+.breeds {
+    padding: 0 5%;
+}
+
+@media (min-width: 1020px) {
+    .breeds {
+        padding: 0 15%;
+    }    
+}

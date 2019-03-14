@@ -1,0 +1,19 @@
+.breedView {
+    /* width: 100%; */
+    text-align: center;
+    border: 2px solid #999999;
+    margin: 20px auto;
+    padding: 20px 5%;
+    
+    background-color: #ffffff;
+    border-radius: 5px;  
+}
+.breedView-card img {
+    max-height: 500px;
+    max-width: 100%;
+}
+.breedView-card p {
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: bold;
+}

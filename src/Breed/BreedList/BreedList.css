@@ -1,0 +1,9 @@
+.breedList select {  
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px 0;
+  outline: none;
+  border: 2px solid #999999;
+  border-radius: 5px;
+}
