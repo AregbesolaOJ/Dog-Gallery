@@ -88,14 +88,18 @@ class App extends Component {
     if (this.state !== "" && this.state.email !== "") {
       this.setState({ isLoading: true })
       fetch(api_URI, config)
+      .then(this.handleError)
       .then(response => response.json())
       .then(data => {
         this.setState({ id: data.id})
-      })
 
-      setTimeout(() => {
-        this.setState({ modalIsOpen: true, isLoading: false })
-      }, 800)
+        setTimeout(() => {
+          this.setState({ modalIsOpen: true, isLoading: false })
+        }, 1000)    
+      })
+      .catch(error => alert('Something went wrong, please check your internet connection and reload this page', error))
+
+
     } 
   }
 
@@ -105,7 +109,8 @@ class App extends Component {
       showOrder: false, 
       name: '', 
       email: '', 
-      comment: '' 
+      comment: '',
+      id: '' 
     })
   }
   componentDidMount () {
